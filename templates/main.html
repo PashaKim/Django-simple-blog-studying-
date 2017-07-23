@@ -1,0 +1,18 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Django</title>
+    <link rel="stylesheet" media="all" type="text/css" href="{% static "css\foundation.css" %}">
+</head>
+<body>
+
+    <h1><a href="/">Мой блог</a></h1>
+
+<div class="large-offset-1 large-8 columns">
+    {% block article %}{% endblock %}
+</div>
+
+</body>
+</html>
